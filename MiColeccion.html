@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <a class="button" href="Monedas.html">Regresar</a>
+    <a class="button" href="IngresarNuevo.html">Registrar nuevo artículo</a>
+    <form>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="collection.css">
+
+    <title>Mi colección de monedas colombianas</title>
+
+    <style>
+      .coin {
+        display: inline-block;
+        margin: 10px;
+        cursor: pointer;
+      }
+      .coin img {
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+   
+    <h1 style="text-align: center"> Su coleccion de monedas colombiana</h1>
+    <div class = "block">
+    <div class="coin" onclick="showDescription('moneda1')">
+      <img src="https://coleccioneseldorado.com/23494-large_default/mexico-100-pesos-1985-km-499-no-unc.jpg" alt="Moneda 1">
+    </div>
+    <div class="coin" onclick="showDescription('moneda2')">
+      <img src="https://3.bp.blogspot.com/-sLKN6DETz64/VUuVI2FnqcI/AAAAAAAABhs/9SXXDK4LxRc/s1600/Moneda%2Bantigua.png   " alt="Moneda 2">
+    </div>
+    <div class="coin" onclick="showDescription('moneda3')">
+      <img src="https://www.alfacrom.com.co/wp-content/uploads/2018/01/Imagen-112.png" alt="Moneda 3">
+    </div>
+    
+    <div id="description"></div>
+    </div>
+    <script>
+      function showDescription(coin) {
+        var description = document.getElementById('description');
+        switch (coin) {
+          case 'moneda1':
+            description.innerHTML = '<h2>Moneda de $5.000</h2><p>En 1998 se conmemoraban los 50 años de la Organización de Estados Americanos (OEA) y  el Banco de la República emitió una edición especial de 5.000.</p>';
+            break;
+          case 'moneda2':
+            description.innerHTML = '<h2>$1.500 pesos oro</h2><p>Fue acuñada por el  cincuentenario del Banco de la República, es de color dorado y en el sello lleva el Poporo Quimbaya, símbolo de la misma comunidad indígena del Cauca.</p>';
+            break;
+          case 'moneda3':
+            description.innerHTML = '<h2>Moneda $100.000</h2><p>La moneda con mayor denominación en la historia de Colombia fue la acuñada en el primer centenario del natalicio del ex presidente conservador Mariano Ospina Pérez.</p>';
+            break;
+          case 'moneda4':
+            description.innerHTML = '<h2>El triunfo de las ideas</h2><p>El Banco de la República, en cumplimiento de la Ley 1683 del 28 de noviembre de 2013, emite una moneda para conmemorar el bicentenario de la independencia de Cundinamarca proclamada el 16 de julio de 1813. </p>';
+            break;
+          case 'moneda5':
+            description.innerHTML = '<h2>Moneda onza de plata</h2><p>Es una moneda sin valor nominal de curso legal, hecha de plata u oro de ley 0.999. ​Producida por el Banco de México. .</p>';
+            break;
+          default:
+            description.innerHTML = '';
+        }
+      }
+    
+    </script>
+    </form>
+  </body>
+</html>

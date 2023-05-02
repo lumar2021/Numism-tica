@@ -1,0 +1,46 @@
+/* Estilo para la sección de la colección de monedas */
+.coleccion {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  /* Estilo para el título de la colección */
+  .coleccion h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para los botones de las monedas */
+  .botones-monedas button {
+    border: none;
+    background: none;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para las imágenes de las monedas */
+  .botones-monedas img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  /* Estilo para las descripciones de las monedas */
+  .descripcion-monedas {
+    margin-top: 50px;
+  }
+  
+  /* Estilo para cada descripción de moneda */
+  .moneda1-descripcion,
+  .moneda2-descripcion,
+  .moneda3-descripcion {
+    display: none;
+  }
+  
+  /* Estilo para mostrar la descripción de la moneda cuando se hace clic en el botón */
+  .moneda1:hover ~ .descripcion-monedas .moneda1-descripcion,
+  .moneda2:hover ~ .descripcion-monedas .moneda2-descripcion,
+  .moneda3:hover ~ .descripcion-monedas .moneda3-descripcion {
+    display: block;
+  }
+  

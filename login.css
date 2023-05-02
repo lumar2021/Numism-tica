@@ -1,0 +1,65 @@
+body {
+    background-image: linear-gradient(#2f4f75, #f0e9f9 );
+    background-repeat: no-repeat; /* evitar la repetición de la imagen */
+    background-size: cover; /* cubrir todo el fondo sin deformar la imagen */
+  }
+
+form {
+    max-width: 500px;
+    margin:  150px auto;
+    padding: 20px;
+    border: 1px solid #97928a;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff; 
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #1e1f26;
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+
+  .button
+  {
+    background-color: #758eb7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: left !important;
+  }
+  
+  .button:hover
+  {
+    background-color: #283655;
+    color: #fff;
+  }
+
+  .button:active
+  {
+    transform: translateY(1px);
+  }
+

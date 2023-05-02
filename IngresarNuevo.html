@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="IngresarNuevo.css">
+</head>
+<body>
+    <form>
+        <h1>Registra la información del artículo nuevo</h1>
+        <label for="moneda">Nombre moneda:</label>
+        <input type="text" id="moneda" name="moneda">
+        <label for="detalles">Detalles de la moneda:</label>
+        <input type="text" id="detalles" name="detalles">
+        <label for="Valor facial">Valor facial:</label>
+        <input type="text" id="Valor facial" name="Valor facial">
+        <label for="Precio avaluado">Precio avaluado en pesos:</label>
+        <input type="number" id="Precio avaluado" name="Precio avaluado">
+        <br><br>
+        <label for="Lugar de Ceca">Lugar de ceca:</label>
+        <input type="text" id="Lugar de Ceca" name="Lugar de Ceca">
+        <label for="Material">Metales de aleación:</label>
+        <input type="text" id="Material" name="Material">
+        <label for="peso">Peso en gramos:</label>
+        <input type="number" id="peso" name="peso">
+        <label for="diametro">Diametro en milímetros:</label>
+        <input type="number" id="diametro" name="diametro">
+
+        <br><br>
+        <label for="anio">Año de acuñación:</label>
+        <input type="number" id="anio" name="anio">
+        <br><br>
+        <label for="tipo">Tipo articulo:</label>
+        <select name="tipo">
+            <option value="Moneda">Moneda</option>
+            <option value="Billete" selected>Billete</option>
+          </select>
+          <br>
+    
+    
+        <a class="button"  type="submit" href="MiColeccion.html" onclick="comprado()">Agregar moneda </a>
+        <script>
+            function comprado(){
+                alert("Moneda agregada de forma exitosa")
+            }
+        </script>    
+        <a class="button" type="submit" href="MiColeccion.html">Regresar</a>
+      </form>
+      
+</body>
+</html>
